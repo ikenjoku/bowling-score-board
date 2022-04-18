@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppState } from "./context";
-import Game from "./components/Game";
+import Game from "./components/Board";
 
 import "./App.css";
 

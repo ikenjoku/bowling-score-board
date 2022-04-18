@@ -4,8 +4,8 @@ import { shallow } from "enzyme";
 
 describe("Scorecard", () => {
   it("should render table with 11 columns", () => {
-    const frames = [];
-    const cumulativeScores = [];
+    const frames: number[][] = [];
+    const cumulativeScores: number[] = [];
     const totalScore = 0;
     const wrapper = shallow(
       <Scores
@@ -18,8 +18,8 @@ describe("Scorecard", () => {
   });
 
   it("should render the correct column headings", () => {
-    const frames = [];
-    const cumulativeScores = [];
+    const frames: number[][] = [];
+    const cumulativeScores: number[] = [];
     const totalScore = 0;
     const wrapper = shallow(
       <Scores

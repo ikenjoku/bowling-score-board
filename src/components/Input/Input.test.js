@@ -1,5 +1,5 @@
 import React from "react";
-import Controls from "./index";
+import Input from "./index";
 import { shallow } from "enzyme";
 
 describe("Controls", () => {
@@ -8,7 +8,7 @@ describe("Controls", () => {
     const lastRoll = 0;
     const rolls = 0;
     const wrapper = shallow(
-      <Controls gameOver={gameOver} lastRoll={lastRoll} rolls={rolls} />
+      <Input gameOver={gameOver} lastRoll={lastRoll} rolls={rolls} />
     );
     expect(wrapper.find("button").length).toEqual(11);
   });
@@ -18,7 +18,7 @@ describe("Controls", () => {
     const lastRoll = 0;
     const rolls = 0;
     const wrapper = shallow(
-      <Controls gameOver={gameOver} lastRoll={lastRoll} rolls={rolls} />
+      <Input gameOver={gameOver} lastRoll={lastRoll} rolls={rolls} />
     );
     expect(wrapper.find("button.restart").length).toEqual(0);
   });
@@ -29,7 +29,7 @@ describe("Controls", () => {
       const lastRoll = 0;
       const rolls = i;
       const wrapper = shallow(
-        <Controls gameOver={gameOver} lastRoll={lastRoll} rolls={rolls} />
+        <Input gameOver={gameOver} lastRoll={lastRoll} rolls={rolls} />
       );
       expect(wrapper.find("button.restart").length).toEqual(1);
     });

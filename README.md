@@ -18,7 +18,7 @@ $ yarn start
 ```
 ### Tests
 
-Clone repo, install the dependencies and start the app.
+Clone repo, install the dependencies.
 
 ```sh
 $ yarn test

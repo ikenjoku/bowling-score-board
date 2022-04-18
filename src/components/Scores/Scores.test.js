@@ -1,5 +1,5 @@
 import React from "react";
-import Scorecard from "./index";
+import Scores from "./index";
 import { shallow } from "enzyme";
 
 describe("Scorecard", () => {
@@ -8,7 +8,7 @@ describe("Scorecard", () => {
     const cumulativeScores = [];
     const totalScore = 0;
     const wrapper = shallow(
-      <Scorecard
+      <Scores
         frames={frames}
         cumulativeScores={cumulativeScores}
         totalScore={totalScore}
@@ -22,7 +22,7 @@ describe("Scorecard", () => {
     const cumulativeScores = [];
     const totalScore = 0;
     const wrapper = shallow(
-      <Scorecard
+      <Scores
         frames={frames}
         cumulativeScores={cumulativeScores}
         totalScore={totalScore}
@@ -46,7 +46,7 @@ describe("Scorecard", () => {
     const cumulativeScores = [0, 7, 20, 19, 8];
     const totalScore = 8;
     const wrapper = shallow(
-      <Scorecard
+      <Scores
         frames={frames}
         cumulativeScores={cumulativeScores}
         totalScore={totalScore}
@@ -73,7 +73,7 @@ describe("Scorecard", () => {
     const cumulativeScores = [0, 7, 20, 19, 8];
     const totalScore = 8;
     const wrapper = shallow(
-      <Scorecard
+      <Scores
         frames={frames}
         cumulativeScores={cumulativeScores}
         totalScore={totalScore}
@@ -88,7 +88,7 @@ describe("Scorecard", () => {
     const cumulativeScores = [0, 7, 20, 19, 8];
     const totalScore = 8;
     const wrapper = shallow(
-      <Scorecard
+      <Scores
         frames={frames}
         cumulativeScores={cumulativeScores}
         totalScore={totalScore}

@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.restart {
+  width: 100px;
+  border-radius: 15px;
+  height: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #0A1045;
+  border-color: #0A1045;
+  background-color: transparent;
+}
+
+.restart:hover {
+  background-color: #0A1045;
+  color: white;
+  opacity: 0.9;
+}
+
+button {
+  font-family: 'Anybody', cursive;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: #F6AF65;
+  color: white;
+  outline: none;
+  font-size: 15px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:disabled,
+button[disabled]{
+  background-color: #27b09e82;
+  color: grey;
+}

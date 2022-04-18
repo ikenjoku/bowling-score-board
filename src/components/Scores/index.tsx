@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./Scorecard.css";
+import "./Scores.css";
 
-const Scorecard: React.FC<{
+const Scores: React.FC<{
   cumulativeScores: number[];
   frames: number[][];
   totalScore: number;
@@ -157,4 +157,4 @@ const Scorecard: React.FC<{
   );
 };
 
-export default Scorecard;
+export default Scores;

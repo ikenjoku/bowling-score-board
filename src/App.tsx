@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppState } from "./context";
-import Game from "./components/Board";
+import Board from "./components/Board";
 
 import "./App.css";
 
@@ -17,7 +17,7 @@ function App() {
           😃
         </span>
       </p>
-      <Game game={state} />
+      <Board game={state} />
     </div>
   );
 }

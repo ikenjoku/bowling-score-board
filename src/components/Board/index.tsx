@@ -1,11 +1,11 @@
 import React from "react";
 import { GAME } from "../../context/AppStateContext";
-import Scorecard from "../Scorecard";
-import Controls from "../Controls";
+import Scores from "../Scores";
+import Input from "../Input";
 
-import "./Game.css";
+import "./Board.css";
 
-const Game: React.FC<{
+const Board: React.FC<{
   game: GAME;
 }> = ({ game }) => {
   const { frames, cumulativeScores, gameOver, pins, rolls } = game;
@@ -13,12 +13,12 @@ const Game: React.FC<{
 
   return (
     <div className="game">
-      <Scorecard
+      <Scores
         frames={frames}
         cumulativeScores={cumulativeScores}
         totalScore={totalScore}
       />
-      <Controls
+      <Input
         gameOver={gameOver}
         lastRoll={pins.slice(-1)[0]}
         rolls={rolls}
@@ -33,4 +33,4 @@ const Game: React.FC<{
   );
 };
 
-export default Game;
+export default Board;

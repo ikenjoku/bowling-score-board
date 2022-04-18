@@ -1,9 +1,9 @@
 import React from "react";
 import { useAppState } from "../../context";
 
-import "./Controls.css";
+import "./Input.css";
 
-const Controls: React.FC<{
+const Input: React.FC<{
   gameOver: boolean;
   lastRoll: number;
   rolls: number;
@@ -114,4 +114,4 @@ const Controls: React.FC<{
   );
 };
 
-export default Controls;
+export default Input;
